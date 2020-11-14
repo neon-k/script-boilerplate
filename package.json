@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
     "start": "node .",
     "check-types": "tsc --noEmit",
     "eslint": "eslint src/**/*.ts",
