@@ -4,15 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts",
     "build": "tsc",
     "start": "node .",
     "check-types": "tsc --noEmit",
-    "eslint": "eslint src/**/*.ts",
-    "eslint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier --write 'src/**/*.{js,ts,json}'",
-    "lint": "npm-run-all eslint check-types",
     "lint:fix": "npm-run-all eslint:fix check-types format"
   },
   "repository": {
