@@ -9,7 +9,7 @@
     "start": "node .",
     "check-types": "tsc --noEmit",
     "format": "prettier --write 'src/**/*.{js,ts,json}'",
-    "lint:fix": "npm-run-all eslint:fix check-types format"
+    "lint:fix": "npm-run-all check-types format"
   },
   "repository": {
     "type": "git",
