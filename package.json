@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/index.ts",
+    "start": "NODE_ENV=development ts-node-dev --respawn src/index.ts",
     "build": "tsc",
-    "start": "node .",
+    "start:prod": "NODE_ENV=production node .",
     "check-types": "tsc --noEmit",
     "format": "prettier --write 'src/**/*.{js,ts,json}'",
     "lint:fix": "npm-run-all check-types format"
